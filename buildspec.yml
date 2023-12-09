@@ -5,12 +5,12 @@ phases:
             python: 3.7
     build:
         commands:
-            - echo Build started on 'date'
+            - echo Build started on `date`
             - echo Compiling the Python code....
             - pip install requests -t .
     post_build:
         commands:
-            - echo Build completed on 'date'
+            - echo Build completed on `date`
             - pwd
             - ls -all
 artifacts:
